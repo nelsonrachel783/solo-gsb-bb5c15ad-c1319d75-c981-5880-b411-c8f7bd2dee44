@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    image: dimension-chain-api:latest
+    container_name: dimension-chain-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
